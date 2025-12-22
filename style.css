@@ -45,3 +45,8 @@
 .title {
     border-bottom: 1px solid black;
 }
+
+.new-card {
+    height: 250px;
+    width: 250px;
+}
