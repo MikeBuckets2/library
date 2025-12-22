@@ -17,11 +17,14 @@ addToLibrary('A Tale of Two Cities', 'Charles Dickens', '380', 'Yes');
 addToLibrary('The Alchemist', 'Paulo Coelho', '163', 'No');
 
 function displayBook() {
-    const display = document.querySelector('.book-card');
+    const display = document.querySelector('.book-container');
 
     display.textContent = '';
 
     myLibrary.forEach(book => {
+        const bookCard = document.createElement('div');
+        bookCard.classList.add('book-card');
+
         const bookTitle = document.createElement('h2');
         bookTitle.classList.add('title');
         bookTitle.textContent = book.title;
@@ -38,10 +41,12 @@ function displayBook() {
         bookStatus.classList.add('read');
         bookStatus.textContent = `Read: ${book.read}`;
 
-        display.appendChild(bookTitle);
-        display.appendChild(bookAuthor);
-        display.appendChild(bookPages);
-        display.appendChild(bookStatus);
+        display.appendChild(bookCard);
+
+        bookCard.appendChild(bookTitle);
+        bookCard.appendChild(bookAuthor);
+        bookCard.appendChild(bookPages);
+        bookCard.appendChild(bookStatus);
     });
 };
 
