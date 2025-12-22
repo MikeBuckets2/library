@@ -6,9 +6,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     height: 100vh;
-    width: 100vh;
 }
 
 .sidebar {
@@ -17,7 +16,19 @@
 }
 
 .book-card {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
