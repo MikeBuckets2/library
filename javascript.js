@@ -24,7 +24,7 @@ function displayBook() {
     myLibrary.forEach(book => {
         const bookTitle = document.createElement('h2');
         bookTitle.classList.add('title');
-        bookTitle.textContent = `Title: ${book.title}`;
+        bookTitle.textContent = book.title;
 
         const bookAuthor = document.createElement('p');
         bookAuthor.classList.add('author');
