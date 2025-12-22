@@ -13,6 +13,8 @@
 .sidebar {
     background-color: #e2d4c2;
     grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
@@ -20,7 +22,8 @@
     grid-row: 1 / 3;
 }
 
-.book-card {
+.book-card,
+.new-card {
     height: 250px;
     width: 250px;
     border: 1px solid black;
@@ -47,6 +50,19 @@
 }
 
 .new-card {
-    height: 250px;
-    width: 250px;
+    margin: 10px;
+}
+
+input {
+    border-radius: 10px;
+    border: 0;
+    padding: 3px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 2px 20px;
+    border: 0;
+    background-color: brown;
+    color: white;
 }
