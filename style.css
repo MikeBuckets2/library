@@ -66,3 +66,21 @@ button {
     background-color: brown;
     color: white;
 }
+
+.remove, 
+.toggle {
+    background-color: black;
+    color: white;
+}
+
+.remove:hover {
+    background-color: red;
+}
+
+.toggle:hover {
+    background-color: green;
+}
+
+.new-card button:hover {
+    background-color: gold;
+}
