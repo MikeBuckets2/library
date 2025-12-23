@@ -56,6 +56,10 @@ function displayBook() {
         const toggleButton = document.createElement('button');
         toggleButton.classList.add('toggle');
         toggleButton.textContent = 'Toggle Read';
+        toggleButton.addEventListener('click', () => {
+            book.toggleRead();
+            displayBook();
+        });
 
         display.appendChild(bookCard);
 
@@ -64,6 +68,7 @@ function displayBook() {
         bookCard.appendChild(bookPages);
         bookCard.appendChild(bookStatus);
         bookCard.appendChild(removeButton);
+        bookCard.appendChild(toggleButton);
     });
 };
 
