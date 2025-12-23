@@ -53,6 +53,10 @@ function displayBook() {
             removeBook(book.id);
         });
 
+        const toggleButton = document.createElement('button');
+        toggleButton.classList.add('toggle');
+        toggleButton.textContent = 'Toggle Read';
+
         display.appendChild(bookCard);
 
         bookCard.appendChild(bookTitle);
