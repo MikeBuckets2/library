@@ -51,3 +51,20 @@ function displayBook() {
 };
 
 displayBook();
+
+const form = document.querySelector('#new-book-form');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const newTitle = document.querySelector('#title');
+    const currentTitle = newTitle.value;
+    const newAuthor = document.querySelector('#author');
+    const currentAuthor = newAuthor.value;
+    const newPages = document.querySelector('#pages');
+    const currentPages = newPages.value;
+    const newRead = document.querySelector('#read');
+    const currentRead = newRead.value;
+
+    addToLibrary(currentTitle, currentAuthor, currentPages, currentRead);
+    displayBook();
+});
