@@ -58,6 +58,12 @@ function displayBook() {
 
 displayBook();
 
+function removeBook(id) {
+    const bookIndex = myLibrary.findIndex(book => book.id === id);
+    myLibrary.splice(bookIndex, 1);
+    displayBook();
+}
+
 const form = document.querySelector('#new-book-form');
 
 form.addEventListener('submit', function (event) {
