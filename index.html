@@ -13,13 +13,13 @@
             <form id="new-book-form">
                 <div class="new-card">
                     <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="title" required placeholder="Harry Potter">
                     <label for="author">Author:</label>
-                    <input type="text" id="author" name="author" required>
+                    <input type="text" id="author" name="author" required placeholder="J.K. Rowling">
                     <label for="pages">How many pages?</label>
-                    <input type="tel" id="pages" name="pages" required>
+                    <input type="tel" id="pages" name="pages" required placeholder="300" pattern="[0-9]*">
                     <label for="read">Did you read it?</label>
-                    <input type="text" id="read" name="read">
+                    <input type="text" id="read" name="read" required placeholder="Yes or No" pattern="[Yy]es|[Nn]o">
                     <button type="submit">Add Book</button>
                 </div>
             </form>
