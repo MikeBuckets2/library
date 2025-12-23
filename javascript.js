@@ -42,12 +42,17 @@ function displayBook() {
         bookStatus.classList.add('read');
         bookStatus.textContent = `Read: ${book.read}`;
 
+        const removeButton = document.createElement('button');
+        removeButton.classList.add('remove');
+        removeButton.textContent = 'Remove';
+
         display.appendChild(bookCard);
 
         bookCard.appendChild(bookTitle);
         bookCard.appendChild(bookAuthor);
         bookCard.appendChild(bookPages);
         bookCard.appendChild(bookStatus);
+        bookCard.appendChild(removeButton);
     });
 };
 
