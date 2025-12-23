@@ -45,6 +45,9 @@ function displayBook() {
         const removeButton = document.createElement('button');
         removeButton.classList.add('remove');
         removeButton.textContent = 'Remove';
+        removeButton.addEventListener('click', () => {
+            removeBook(book.id);
+        });
 
         display.appendChild(bookCard);
 
